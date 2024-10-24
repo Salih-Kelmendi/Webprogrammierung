@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Wetter-App</title>
+</head>
+
+<body>
+  <div class="pc">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html">Suche</a></li>
+        <li><a class="active" href="world.html">Welt</a></li>
+      </ul>
+    </nav>
+    <div id="screen">
+      <div class="city-name">
+        <h1 id="city-name">Stadtname</h1>
+      </div>
+      <div class="weather-icon-css">
+        <img class="weather-icon" src="" alt="Wettericon" />
+      </div>
+      <div class="weather-description">
+        <div class="show-metric" id="metric">Temperatur</div>
+        <div class="weather-details">
+          <div class="weather-main" id="weather-main">Hauptwetter</div>
+          <div class="h-f">
+            <div class="show-humidity">Luftfeuchtigkeit: <span id="humidity"></span></div>
+            <div class="show-humidity">Fühlt sich an wie: <span id="feels-like"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="forcasts-box">
+        <h4>HEUTE</h4>
+        <div class="today-forecast">
+          <div class="weather-icon-today">
+            <img class="weather-icons" src="img/sun.png" alt="Sonne" />
+          </div>
+          <div class="temp-today">
+            <span id="temp-min-today"></span> / <span id="temp-max-today"></span>
+          </div>
+        </div>
+        <div class="forecast">
+          <h5>VORHERSAGE</h5>
+          <div id="forecast-box"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
