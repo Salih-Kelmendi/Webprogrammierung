@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- links -->
+  <link rel="icon" type="png" href="img/icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/weltzeichen.css" />
+  <!-- Title -->
+  <title>Wetter-App</title>
+</head>
+
+<body>
+  <div class="pc">
+    <!-- nav section -->
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-location-arrow"></i></a></li>
+        <li><a href="suche.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li><a class="active" href="weltzeichen.html"><i class="fa-solid fa-earth-americas"></i></a></li>
+      </ul>
+    </nav>
+    <!-- main section -->
+    <div class="section">
+      <div class="date"> </div>
+      <div class="button"><i class="fa-solid fa-circle-plus btn-icon"></i></div>
+    </div>
+    <!-- add section -->
+    <div class="section-box">
+      <div class="add-section">
+        <div class="add-section-title">
+          <h2>Neuen Ort hinzufügen</h2>
+        </div>
+        <!-- search -->
+        <div class="search">
+          <div class="search-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <input class="searchinput" type="text" placeholder="Suche...">
+        </div>
+        <!-- error message -->
+        <div class="messages">
+          <div class="error-message">Stadt nicht gefunden</div>
+          <div class="normal-message">Gib deinen Ort ein, um sie hinzuzufügen</div>
+          <div class="added-message">Ort erfolgreich hinzugefügt ✔</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- javascript -->
+<script src="js/weltzeichen.js"></script>
+</html>
